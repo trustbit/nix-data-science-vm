@@ -1,11 +1,71 @@
-Data Science Platform Workspace
-====================================
+// INTERNAL! delete this section before sharing.
 
-Quickly launch a secure and flexible VM for data scientists in Google Cloud. This allows them to get started on a project in a familiar and powerful environment.
+Rinat: this is an artifact from "Scaling ML" line of development. Current status - private. Concrete steps:
+
+0. Done: Sergey and Rinat draft the workspace bueprint. Run Trustbit Brownbag on Nix workspace to share the knowledge.
+1. Done: Rinat writes preface that targets CEO/CTO audience and could be used to draft a blog post.
+2. DSML team (Seb, Christoph, Vadim and Jörg) decides if it is OK to open source this specific project.
+3. Marketing takes over the content and converts into a blog post (regardless of OSS decision, but affects the blog post).
+4. Vadim: introduces workspace to Walter Group to users of workspace v1 (something they can use for free. Discuss the support implications with Jörg, Christoph and Seb first).
+5. Sergey: mentions workspace at VEROO to users of workspace v1 (something they can use for free. Discuss the support implications with Jörg, Christoph and Seb first).
+
+// end of section to delete. INTERNAL
+
+Data Science Platform Workspace
+===============================
+
+> If you are here for Nix and reproducible work environments, scroll to the next section :)
+
+
+
+Current business landscape is changing rapidly. Software is driving that change across multiple directions: digitalization, sustainability, AI/ML. 
+
+Have you heard about Generative AIs (ChatGPT, StableDiffusion, DALL-E)? Although, they are just a tip of the iceberg, they alone can be enough to influence [money allocation in the industry](https://a16z.com/2023/01/19/who-owns-the-generative-ai-platform/).
+
+**Have you heard about the recent big tech lay-offs** by Google, Meta, Amazon, Microsoft and many others? They are doing that to get lean and pivot towards the new market trends (arguably, [these layoffs are also not that large on the global scale](https://www.marketwatch.com/story/big-tech-layoffs-are-not-as-big-as-they-appear-at-first-glance-11674251270)).
+
+
+Large and small companies alike face the similar problem: **you need the right talent to address new challenges**, you need **more capacity to allocate**. Data Scientists, ML Engineers, MLOps, Product Leads with understanding of DS/ML.
+
+There are two ways companies could handle this problem at the root:
+
+1) Hire more people - attract the talent, while competing with every other company on the labour market.
+2) Make existing people more happy and productive, while also improving retention.
+
+Both of these are existential problems. They require strategy, organisational support and execution. 
+
+This Github project is an example of a solution by Trustbit, part of a Data Science Platform. It demonstrates one tactical approach of dealing with a company-scale problem.
+
+
+
+## Trustbit Worskpace 
+
+This repository contains sample code for the Trustbit Data Science workspace. It demonstrates how to **quickly launch a secure and flexible work environment for data scientists in a cloud**. This allows them to get started on a project in a familiar and powerful environment that can be tailored to their needs.
+
+Why is this important?
+
+1. Data Scientists are more productive when they can use latest tools, code and frameworks. Productive data scientists are more satistfied with their jobs and hence more likely to stay around longer.
+2. Frequent bottleneck in daily productivity is about not having enough processing power to train or evaluate a model. Somethimes, not having access to dedicated hardware like NVidia GPUs. By utilising cloud we give data scientists ability to scale out their work environment to handle larger workloads, if needed.
 
 This setup uses Terraform and Nix to provide webIDE based on vscode-server. For small-scale deployments, it is comparable in speed to a classical VM setup based on Docker or bash scripts. It also introduces the flexibility of installing new dependencies (CUDA, Python, native binaries) with the ability to roll back changes.
 
-**For large-scale deployments** (more than 5 workspaces), this setup is **more secure and convenient to  maintain**. Data scientists could apply their own configurations, while Ops could rebuild the entire fleet with the latest updates and security patches.
+**For large-scale deployments** (more than 5 workspaces), this setup is **more secure and convenient to  maintain**. Why is this important?
+
+While data scientists like to bring their own tools and dependencies into projects, this can quickly escalate into a maintenance nightmare for the operations people. Larger is the department, higher is the chance of time-consuming problems for both sides. 
+
+Check out this tweet by François Chollet, "Deep learning @google. Creator of Keras. Author of 'Deep Learning with Python'."
+
+<blockquote class="twitter-tweet" data-lang="en" data-theme="dark"><p lang="en" dir="ltr">Been working with Python for 13 years and I still occasionally end up with a hopelessly borked environment where I have to actually nuke and reinstall the Python interpreter. And yes, I use virtualenv</p>&mdash; François Chollet (@fchollet) <a href="https://twitter.com/fchollet/status/1617704787235176449?ref_src=twsrc%5Etfw">January 24, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+By using Nix we turn the workspace into **reproducible, declarative and reliable systems**. Data scientists could safely apply their own configurations, while Ops could rebuild the entire fleet with the latest updates and security patches.
+
+This approach allows data scientists to be creative with their workspace, while allowing operations to maintain a fleet of workspaces in a uniform and reliable manner.
+
+
+Availability of a powerful and flexible workspace environment not only make people more productive, but also is an attractive perk to bring to hiring interviews.
+
+This approach could be further extended by having **reproducible, declarative and reliable project dependencies** that are shared between the collaborators, operations and maintanenance. Current workspace is designed to support that (via Nix flakes), but that is a subject for another sample Trustbit solution. Also a part of Trustbit Data Science Platform.
+
 
 ![vscode](img/vscode1.png)
 
