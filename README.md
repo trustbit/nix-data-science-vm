@@ -3,7 +3,9 @@ Data Science Platform Workspace
 
 Quickly launch a secure and flexible VM for data scientists in Google Cloud. This allows them to get started on a project in a familiar and powerful environment.
 
-This setup uses Terraform and Nix to provide webIDE based on vscode-server. For small-scale deployments, it is comparable in speed to a classical VM setup based on Docker or bash scripts. For large-scale deployments (more than 5 workspaces), this setup is more secure and convenient to  maintain. Data scientists could apply their own configurations, while Ops could rebuild the entire fleet with the latest updates and security patches.
+This setup uses Terraform and Nix to provide webIDE based on vscode-server. For small-scale deployments, it is comparable in speed to a classical VM setup based on Docker or bash scripts. It also introduces the flexibility of installing new dependencies (CUDA, Python, native binaries) with the ability to roll back changes.
+
+**For large-scale deployments** (more than 5 workspaces), this setup is **more secure and convenient to  maintain**. Data scientists could apply their own configurations, while Ops could rebuild the entire fleet with the latest updates and security patches.
 
 ![vscode](img/vscode1.png)
 
