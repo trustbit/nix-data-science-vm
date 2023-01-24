@@ -55,7 +55,7 @@ While data scientists like to bring their own tools and dependencies into projec
 
 Check out this tweet by François Chollet, "Deep learning @google. Creator of Keras. Author of 'Deep Learning with Python'."
 
-<blockquote class="twitter-tweet" data-lang="en" data-theme="dark"><p lang="en" dir="ltr">Been working with Python for 13 years and I still occasionally end up with a hopelessly borked environment where I have to actually nuke and reinstall the Python interpreter. And yes, I use virtualenv</p>&mdash; François Chollet (@fchollet) <a href="https://twitter.com/fchollet/status/1617704787235176449?ref_src=twsrc%5Etfw">January 24, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en" data-theme="dark"><p lang="en" dir="ltr">Been working with Python for 13 years and I still occasionally end up with a hopelessly borked environment where I have to actually nuke and reinstall the Python interpreter. And yes, I use virtualenv</p>&mdash; François Chollet (@fchollet) <a href="https://twitter.com/fchollet/status/1617704787235176449?ref_src=twsrc%5Etfw">January 24, 2023</a></blockquote>
 
 By using Nix we turn the workspace into **reproducible, declarative and reliable systems**. Data scientists could safely apply their own configurations, while Ops could rebuild the entire fleet with the latest updates and security patches.
 
