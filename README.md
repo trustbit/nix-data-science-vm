@@ -1,4 +1,4 @@
-// INTERNAL! delete this section before sharing.
+// 🚧🚧🚧🚧🚧 delete this section before sharing. 🚧🚧🚧🚧🚧
 
 Rinat: this is an artifact from "Scaling ML" line of development. Current status - private. Concrete steps:
 
@@ -9,7 +9,7 @@ Rinat: this is an artifact from "Scaling ML" line of development. Current status
 4. Vadim: introduces workspace to Walter Group to users of workspace v1 (something they can use for free. Discuss the support implications with Jörg, Christoph and Seb first).
 5. Sergey: mentions workspace at VEROO to users of workspace v1 (something they can use for free. Discuss the support implications with Jörg, Christoph and Seb first).
 
-// end of section to delete. INTERNAL
+//  🚧🚧🚧🚧🚧 end of section to delete 🚧🚧🚧🚧🚧
 
 Data Science Platform Workspace
 ===============================
