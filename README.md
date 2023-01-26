@@ -4,7 +4,7 @@ This repository contains sample code for the Trustbit Data Science VM. It demons
 
 Why is this important?
 
-1. Data Scientists are more productive when they can use latest tools, code and frameworks. Productive data scientists are more satistfied with their jobs and hence more likely to stay around longer.
+1. Data Scientists are more productive when they can use latest tools, code and frameworks. **Productive data scientists are more satistfied with their jobs and hence more likely to stay around longer**.
 2. Frequent bottleneck in daily productivity is about not having enough processing power to train or evaluate a model. Somethimes, not having access to dedicated hardware like NVidia GPUs, Google TPUs or Tenstorrent AI chips. By utilising cloud we give data scientists ability to scale out their work environment to handle larger workloads, if needed.
 
 This setup uses Terraform and Nix to provide pre-configure web-driven development environment that integrates directly with Google Cloud. For small-scale deployments, it is comparable in speed to a classical VM setup based on Docker or bash scripts. It also introduces the flexibility of installing new dependencies (CUDA, Python, native binaries) with the ability to roll back changes.
