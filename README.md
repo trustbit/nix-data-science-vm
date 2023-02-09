@@ -1,7 +1,5 @@
 ## Trustbit Nix Data Science VM 
 
-Status: public access for Jan 26 2023, but not open source.
-
 This repository contains sample code for the Trustbit Data Science VM. It demonstrates how to **quickly launch a secure and flexible work environment for data scientists in a cloud**. This allows them to get started on a project in a familiar and powerful environment that can be tailored to their needs.
 
 Why is this important?
